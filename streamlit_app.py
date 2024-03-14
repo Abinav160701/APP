@@ -7,7 +7,7 @@ import numpy as np
 import tensorflow as tf
 from annoy import AnnoyIndex
 import pandas as pd
-from detectron2.change_bg import get_bg_changed
+#from detectron2.change_bg import get_bg_changed
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
 from sklearn.metrics.pairwise import cosine_similarity
@@ -52,7 +52,7 @@ with st.sidebar:
 
 model = load_model_from_db('Men','Clothing')
 
-features,labels= load_features_from_db(l1,l2)
+#features,labels= load_features_from_db(l1,l2)
 
 
 
